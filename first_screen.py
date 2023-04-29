@@ -3,7 +3,7 @@ from second_win import *
 from final_win import *
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget ,QLabel, QPushButton, QMessageBox, QVBoxLayout,QHBoxLayout
-app = QApplication([])
+
 class MainWin(QWidget):
     def __init__(self):
         super().__init__()
@@ -28,5 +28,8 @@ class MainWin(QWidget):
     def next_click(self):
         self.hide()
         self.sw = TestWin()
-mw = MainWin()
-app.exec_()
+def main():
+    app = QApplication([])
+    mw = MainWin()
+    app.exec_()
+main()
