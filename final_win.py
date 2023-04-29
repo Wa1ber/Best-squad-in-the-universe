@@ -1,7 +1,7 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QMessageBox, QRadioButton, QButtonGroup, QLineEdit
 from instr import *
-app = QApplication([])
+
 class FinalWin(QWidget):
     def __init__(self):
         super().__init__()
@@ -18,5 +18,3 @@ class FinalWin(QWidget):
         self.line.addWidget(self.button_index, alignment = Qt.AlignCenter)
         self.line.addWidget(self.button_workheart, alignment = Qt.AlignCenter)
         self.setLayout(self.line)
-fw = FinalWin()
-app.exec_()
