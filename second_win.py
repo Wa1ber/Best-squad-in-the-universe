@@ -1,8 +1,8 @@
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QTimer, QTime
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QMessageBox, QRadioButton, QButtonGroup, QLineEdit
 from instr import *
 from final_win import *
-app = QApplication([])
+from PyQt5.QtGui import QFont
 class TestWin(QWidget):
     def __init__(self):
         super().__init__()
@@ -55,5 +55,3 @@ class TestWin(QWidget):
     def next_click(self):
         self.hide()
         self.fw = FinalWin()
-main_win = TestWin()
-app.exec_()
